@@ -19,16 +19,15 @@ Selection Sort [2]
 Insertion Sort [3]
 Merge Sort [4]
 Quick Sort [5]
-Quit [6]
-""")
+Quit [6]""")
     choice = input("> ")
     choice = int(choice)
     # check choice for quit option
     if choice == 6:
-        print("Quiting")
+        print("You are now leaving... Goodbye.")
         return
     # ask how many numbers in list
-    print("How many random integers do you want in the list?")
+    print("\nHow many random integers do you want in the list?")
     num = int(input("> "))
     # add random numbers to list
     x = 0
@@ -49,6 +48,7 @@ Quit [6]
     elif choice == 5:
         list = quick_sort(list)
     #print list
+    print("Here is the sorted list:")
     print(list)
     print()
     #clear list
