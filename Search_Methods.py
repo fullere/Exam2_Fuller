@@ -1,4 +1,5 @@
-# Bubble Sort
+# Bubble Sort Method
+
 def bubble_sort(arr):
     def swap(i, j):
         arr[i], arr[j] = arr[j], arr[i]
@@ -17,7 +18,8 @@ def bubble_sort(arr):
     return arr
 
 
-# Selection Sort
+# Selection Sort Method
+
 def selection_sort(arr):
     for i in range(len(arr)):
         minimum = i
@@ -33,7 +35,8 @@ def selection_sort(arr):
     return arr
 
 
-# Insertion Sort
+# Insertion Sort Method
+
 def insertion_sort(arr):
     for i in range(len(arr)):
         cursor = arr[i]
@@ -46,7 +49,8 @@ def insertion_sort(arr):
     return arr
 
 
-# Merge Sort
+# Merge Sort Method
+
 def merge_sort(arr):
     # the last array split
     if len(arr) <= 1:
@@ -75,7 +79,7 @@ def merge(left, right, merged):
     return merged
 
 
-# Quick Sort
+# Quick Sort Method
 
 def partition(array, begin, end):
     pivot_idx = begin
